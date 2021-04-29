@@ -7,7 +7,7 @@
 <AnchorPane prefHeight="472.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <Button layoutX="28.0" layoutY="38.0" mnemonicParsing="false" onAction="#WordCount" prefHeight="54.0" prefWidth="124.0" text="RUN PROGRAM" />
-      <Button layoutX="28.0" layoutY="108.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="124.0" text="CLOSE PROGRAM" />
-      <TextArea layoutX="271.0" layoutY="50.0" prefHeight="257.0" prefWidth="300.0" />
+      <Button layoutX="28.0" layoutY="108.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="124.0" onAction="#handleCloseButtonAction" text="CLOSE PROGRAM" />
+      <TextArea fx:id="result" layoutX="271.0" layoutY="50.0" prefHeight="257.0" prefWidth="300.0" />
    </children>
 </AnchorPane>
