@@ -3,21 +3,25 @@ package application;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Collectors;
 
-import javax.print.DocFlavor.URL;
+
+
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import java.sql.*;
 
 public class MainController implements Initializable {
 
+	
+	/**
+	 * 
+	 */
     @FXML
     private TextArea result;
 
@@ -108,7 +112,12 @@ public class MainController implements Initializable {
             }
         }
     }
-
+    
+    
+/**
+ * Returns the top most frequent words from text input file
+ * @return The most 20 frequent word Occurrence from  input file
+ */
     public String getTop20WordsFromDatabase(){
         Statement stmt = null;
         StringBuilder stringBuilder = new StringBuilder();
